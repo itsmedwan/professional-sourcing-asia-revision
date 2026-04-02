@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>PT Professional Sourcing Indonesia</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+
+        /* PERBAIKAN: Menggunakan file lokal & Overlay yang lebih elegan */
+        .hero-gradient {
+            background: url('hero.png') center/cover no-repeat;
+            min-height: 80vh; 
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 2px;
+            bottom: -4px; left: 0; background-color: #EAB308;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+        html { scroll-behavior: smooth; }
+        
+        /* Animasi halus untuk hover card */
+        .hover-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 overflow-x-hidden">
+
+    <nav class="bg-[#002B5B] text-white py-4 px-6 sticky top-0 z-[100] shadow-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                    <i class="fas fa-globe text-blue-400"></i>
+                </div>
+                <div class="leading-tight">
+                    <span class="block text-sm font-black uppercase tracking-tighter text-white">PT Professional</span>
+                    <span class="block text-[10px] font-bold text-blue-400 uppercase tracking-widest">Sourcing Indonesia</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-[11px] font-bold uppercase tracking-widest items-center">
+                <a href="index.html" class="nav-link text-yellow-500">Home</a>
+                <a href="about.html" class="nav-link hover:text-blue-300 transition">About</a>
+                <a href="services.html" class="nav-link hover:text-blue-300 transition">Services</a>
+                <a href="industries.html" class="nav-link hover:text-blue-300 transition">Industries</a>
+                <a href="insights.html" class="nav-link hover:text-blue-300 transition">Insights</a>
+                <a href="https://wa.me/6282125160108?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda." target="_blank" class="bg-yellow-600 px-5 py-2 rounded shadow-lg hover:bg-yellow-500 transition text-white">Start Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative hero-gradient text-white px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter uppercase mb-6">
+                Integrated Global Advisory, Sourcing & Execution
+            </h3>
+            <p class="text-slate-200 text-sm md:text-lg max-w-2xl mx-auto mb-10 font-medium tracking-wide italic">
+                "Layanan Terintegrasi Advisory, Sourcing & Eksekusi Global — dari strategi hingga eksekusi menyeluruh lintas industri."
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/6282125160108?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda." target="_blank" class="bg-[#002B5B] border border-blue-400 hover:bg-blue-900 text-white px-8 py-3 font-bold text-xs uppercase tracking-widest transition shadow-xl">
+                    Start Consultation
+                </a>
+                <a href="services.html" class="bg-white hover:bg-gray-100 text-[#002B5B] px-8 py-3 font-bold text-xs uppercase tracking-widest transition flex items-center shadow-lg">
+                    Explore Services <i class="fas fa-chevron-right ml-2 text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 bg-gray-50 border-b">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex items-center justify-center gap-4 mb-12">
+                <div class="hidden md:block h-px w-12 bg-blue-300"></div>
+                <h2 class="text-2xl md:text-3xl font-black text-[#002B5B] uppercase tracking-tighter">
+                    Why Choose Us | <span class="font-light italic text-blue-800 lowercase">Mengapa Memilih Kami</span>
+                </h2>
+                <div class="hidden md:block h-px w-12 bg-blue-300"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 shadow-sm border border-gray-100 rounded-sm hover:shadow-xl transition-all group hover-card">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-700 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-[#002B5B] group-hover:text-white transition-colors shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h4 class="font-black uppercase text-xs tracking-widest text-[#002B5B] mb-2">Risk & Compliance Assurance</h4>
+                    <p class="text-[11px] text-gray-500 leading-relaxed uppercase italic font-medium">Ensuring regulatory and operational safety.</p>
+                </div>
+
+                <div class="bg-white p-8 shadow-sm border border-gray-100 rounded-sm hover:shadow-xl transition-all group hover-card">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-700 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-[#002B5B] group-hover:text-white transition-colors shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                    </div>
+                    <h4 class="font-black uppercase text-xs tracking-widest text-[#002B5B] mb-2">Global Network & Strategic Access</h4>
+                    <p class="text-[11px] text-gray-500 leading-relaxed uppercase italic font-medium">Connecting you to markets worldwide.</p>
+                </div>
+
+                <div class="bg-white p-8 shadow-sm border border-gray-100 rounded-sm hover:shadow-xl transition-all group hover-card">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-700 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-[#002B5B] group-hover:text-white transition-colors shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                    <h4 class="font-black uppercase text-xs tracking-widest text-[#002B5B] mb-2">Executive-Level Oversight</h4>
+                    <p class="text-[11px] text-gray-500 leading-relaxed uppercase italic font-medium">High level guidance and expertise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-black text-[#002B5B] uppercase italic mb-8 border-l-4 border-yellow-500 pl-4 tracking-tighter">About Us</h2>
+                <div class="space-y-6">
+                    <p class="text-lg font-semibold text-slate-700 italic">
+                        We are a global advisory and sourcing firm connecting opportunities across borders.
+                    </p>
+                    <p class="text-sm text-slate-500 leading-relaxed uppercase tracking-wider">
+                        Kami adalah perusahaan advisory dan sourcing global yang menghubungkan peluang lintas negara.
+                    </p>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-50 z-0"></div>
+                <img src="about.png" 
+                     class="relative z-10 w-full rounded-sm shadow-2xl grayscale hover:grayscale-0 transition duration-700 border-8 border-white" 
+                     alt="Professional Meeting">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-[#002B5B] text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl font-black uppercase italic tracking-tighter">Our Core Services <span class="font-light text-blue-300 block text-xs mt-2 uppercase tracking-[0.3em]">Layanan Utama Kami</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white/10 p-6 border border-white/10 backdrop-blur-sm text-center group hover:bg-white transition duration-500 rounded-sm">
+                    <i class="fas fa-chess-knight text-3xl text-blue-400 mb-6 group-hover:text-blue-900 transition"></i>
+                    <h4 class="font-bold uppercase text-xs tracking-widest mb-2 group-hover:text-blue-900 transition">Strategic Advisory</h4>
+                    <p class="text-[10px] text-blue-200 group-hover:text-gray-500 leading-relaxed uppercase tracking-tighter">Strategic Insights & Planning</p>
+                </div>
+                <div class="bg-white/10 p-6 border border-white/10 backdrop-blur-sm text-center group hover:bg-white transition duration-500 rounded-sm">
+                    <i class="fas fa-ship text-3xl text-blue-400 mb-6 group-hover:text-blue-900 transition"></i>
+                    <h4 class="font-bold uppercase text-xs tracking-widest mb-2 group-hover:text-blue-900 transition">Sourcing & Execution</h4>
+                    <p class="text-[10px] text-blue-200 group-hover:text-gray-500 leading-relaxed uppercase tracking-tighter">Global Procurement & Logistics</p>
+                </div>
+                <div class="bg-white/10 p-6 border border-white/10 backdrop-blur-sm text-center group hover:bg-white transition duration-500 rounded-sm">
+                    <i class="fas fa-balance-scale text-3xl text-blue-400 mb-6 group-hover:text-blue-900 transition"></i>
+                    <h4 class="font-bold uppercase text-xs tracking-widest mb-2 group-hover:text-blue-900 transition">Legal & Tax Advisory</h4>
+                    <p class="text-[10px] text-blue-200 group-hover:text-gray-500 leading-relaxed uppercase tracking-tighter">Expert Legal & Tax Solutions</p>
+                </div>
+                <div class="bg-white/10 p-6 border border-white/10 backdrop-blur-sm text-center group hover:bg-white transition duration-500 rounded-sm">
+                    <i class="fas fa-cogs text-3xl text-blue-400 mb-6 group-hover:text-blue-900 transition"></i>
+                    <h4 class="font-bold uppercase text-xs tracking-widest mb-2 group-hover:text-blue-900 transition">Managed Services</h4>
+                    <p class="text-[10px] text-blue-200 group-hover:text-gray-500 leading-relaxed uppercase tracking-tighter">Operational Support & Solutions</p>
+                </div>
+            </div>
+            <p class="mt-12 text-center text-[10px] italic text-blue-300 opacity-60">
+                *In collaboration with licensed legal and tax professionals where required.*
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-12 px-6 border-t border-blue-900/30">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-white font-black text-xl mb-4 italic uppercase tracking-tighter">PT Professional <span class="text-blue-600">Sourcing</span> Indonesia</h3>
+            <p class="text-[10px] font-bold uppercase tracking-[0.4em] opacity-40 mb-6">Global Integrity • Local Expertise</p>
+            <div class="h-px w-20 bg-yellow-600 mx-auto mb-8"></div>
+            <p class="text-[10px] font-medium uppercase tracking-widest italic">
+                © 2026 PT Professional Sourcing Indonesia. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6282125160108?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda.?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda." target="_blank" class="fixed bottom-6 right-6 z-[100] flex items-center group shadow-2xl">
+        <div class="bg-white text-slate-900 px-4 py-2 rounded-l-full font-bold text-[10px] uppercase tracking-widest hidden md:block border border-gray-200">Start Global Journey →</div>
+        <div class="bg-[#002B5B] text-white p-4 rounded-full md:rounded-l-none md:rounded-r-full group-hover:bg-blue-800 transition">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </div>
+    </a>
+<script>
+    // 1. Cari tombolnya
+    const tombolMenu = document.getElementById('mobile-menu-button');
+    // 2. Cari menunya
+    const menuNavigasi = document.getElementById('mobile-menu');
+
+    // 3. Beri instruksi: "Kalau tombol diklik, munculkan/sembunyikan menu"
+    tombolMenu.onclick = function() {
+        menuNavigasi.classList.toggle('hidden');
+    };
+</script>
+</body>
+</html>
