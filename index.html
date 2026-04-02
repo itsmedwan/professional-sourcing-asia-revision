@@ -34,29 +34,54 @@
     </style>
 </head>
 <body class="bg-white text-slate-900 overflow-x-hidden">
-
-    <nav class="bg-[#002B5B] text-white py-4 px-6 sticky top-0 z-[100] shadow-md border-b border-white/10">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
-                    <i class="fas fa-globe text-blue-400"></i>
-                </div>
-                <div class="leading-tight">
-                    <span class="block text-sm font-black uppercase tracking-tighter text-white">PT Professional</span>
-                    <span class="block text-[10px] font-bold text-blue-400 uppercase tracking-widest">Sourcing Indonesia</span>
-                </div>
-            </div>
-            
-            <div class="hidden md:flex space-x-8 text-[11px] font-bold uppercase tracking-widest items-center">
-                <a href="index.html" class="nav-link text-yellow-500">Home</a>
-                <a href="about.html" class="nav-link hover:text-blue-300 transition">About</a>
-                <a href="services.html" class="nav-link hover:text-blue-300 transition">Services</a>
-                <a href="industries.html" class="nav-link hover:text-blue-300 transition">Industries</a>
-                <a href="insights.html" class="nav-link hover:text-blue-300 transition">Insights</a>
-                <a href="https://wa.me/6282125160108?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda." target="_blank" class="bg-yellow-600 px-5 py-2 rounded shadow-lg hover:bg-yellow-500 transition text-white">Start Consultation</a>
+<nav class="bg-[#002B5B] text-white py-4 px-6 sticky top-0 z-[100] shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="leading-tight">
+                <span class="block text-sm md:text-base font-black uppercase tracking-tighter">PT Professional</span>
+                <span class="block text-[10px] md:text-xs font-bold text-blue-400 uppercase tracking-widest">Sourcing Indonesia</span>
             </div>
         </div>
-    </nav>
+
+        <div class="hidden md:flex space-x-6 text-[11px] font-bold uppercase tracking-widest items-center">
+            <a href="index.html" class="hover:text-yellow-500 transition">Home</a>
+            <a href="about.html" class="hover:text-yellow-500 transition">About</a>
+            <a href="services.html" class="hover:text-yellow-500 transition">Services</a>
+            <a href="industries.html" class="hover:text-yellow-500 transition">Industries</a>
+            <a href="insight.html" class="hover:text-yellow-500 transition">Insights</a>
+            <a href="https://wa.me/6282125160108?text=Halo%20PT%20Professional%20Sourcing%20Indonesia,%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20bisnis%20Anda." 
+               class="bg-yellow-600 px-4 py-2 rounded shadow hover:bg-yellow-500 transition">
+               Contact Us
+            </a>
+        </div>
+
+        <div class="md:hidden">
+            <button id="hamburger-btn" class="text-2xl focus:outline-none p-2">
+                <i class="fas fa-bars"></i> </button>
+        </div>
+    </div>
+
+    <div id="mobile-menu-list" class="hidden md:hidden bg-[#001f42] absolute left-0 w-full p-6 space-y-4 shadow-xl border-t border-white/10">
+        <a href="index.html" class="block py-2 border-b border-white/5">Home</a>
+        <a href="about.html" class="block py-2 border-b border-white/5">About</a>
+        <a href="services.html" class="block py-2 border-b border-white/5">Services</a>
+        <a href="industries.html" class="block py-2 border-b border-white/5">Industries</a>
+        <a href="insight.html" class="block py-2 border-b border-white/5">Insights</a>
+        <a href="https://wa.me/6282125160108?text=Halo%20Admin..." class="block py-3 text-yellow-500 font-black italic">START CONSULTATION</a>
+    </div>
+</nav>
+
+<script>
+    // Ambil elemen tombol dan elemen list menu
+    const tombol = document.getElementById('hamburger-btn');
+    const menu = document.getElementById('mobile-menu-list');
+
+    // Buat fungsi klik
+    tombol.addEventListener('click', function() {
+        // Logikanya: "Jika ada class 'hidden' maka hapus, jika tidak ada maka tambahkan"
+        menu.classList.toggle('hidden');
+    });
+</script>
 
     <section class="relative hero-gradient text-white px-6">
         <div class="max-w-5xl mx-auto text-center">
